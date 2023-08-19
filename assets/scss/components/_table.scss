@@ -1,0 +1,10 @@
+.table {
+  border-top: 2px solid $dark;
+  th {
+    text-align: start;
+  }
+  td {
+    text-align: end;
+    font-family: "Noto Sans TC", sans-serif !important;
+  }
+}

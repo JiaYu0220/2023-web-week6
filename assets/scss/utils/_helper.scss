@@ -1,0 +1,60 @@
+.-rotate-2 {
+  rotate: -2deg;
+}
+.rotate-2 {
+  rotate: 2deg;
+}
+.-rotate-3 {
+  rotate: -3deg;
+}
+.-rotate-4 {
+  rotate: -4deg;
+}
+.area-4 {
+  width: 32px;
+  height: 32px;
+}
+.area-5 {
+  width: 40px;
+  height: 40px;
+}
+@include media-breakpoint-up(md) {
+  .area-md-6 {
+    width: 48px;
+    height: 48px;
+  }
+}
+.object-left {
+  object-position: left;
+}
+.table-lg {
+  th,
+  td {
+    padding: 1rem 0;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .area-lg-10 {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+@include media-breakpoint-up(md) {
+  .border-start-md-0 {
+    border-left: 0 !important;
+  }
+  .display-md-1 {
+    font-size: 5rem;
+    font-family: "Yeseva One", cursive !important;
+  }
+  .table-md-sm {
+    th,
+    td {
+      padding: 0.5rem 0;
+    }
+  }
+}

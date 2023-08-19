@@ -1,0 +1,7 @@
+.form-text {
+  font-size: 0.875rem;
+  color: $gray-3;
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
+}

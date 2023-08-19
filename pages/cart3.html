@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購票-訂購結果 | 7TAO</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+    <!--========================
+    =          step            =
+    =========================-->
+    <div class="container-sm">
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+          <ul
+            class="cart-step-group list-unstyled d-flex justify-content-between mt-2 mt-md-7 mb-6 mb-md-12"
+          >
+            <li class="d-flex flex-column align-items-center">
+              <div class="cart-step ready mb-1 mb-md-2">
+                <i class="icofont-verification-check"></i>
+              </div>
+              <p class="fw-bold">訂單確認</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <div class="cart-step ready mb-1 mb-md-2">
+                <i class="icofont-verification-check"></i>
+              </div>
+              <p class="fw-bold">結帳付款</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <div class="cart-step ready mb-1 mb-md-2">3</div>
+              <p class="fw-bold">訂購結果</p>
+            </li>
+          </ul>
+          <!--========================
+          =           訂單           =
+          =========================-->
+          <div class="text-center">
+            <p class="icofont-check-circled fs-5 fs-md-3 mb-4 mb-md-2"></p>
+            <h3 class="fs-7 fs-md-5 mb-6">訂購成功</h3>
+          </div>
+          <table class="table table-lg table-md-sm mb-4">
+            <tbody>
+              <tr>
+                <th scope="row">訂單編號</th>
+                <td>892746123</td>
+              </tr>
+              <tr>
+                <th scope="row">訂購時間</th>
+                <td>2023/04/28 14:30</td>
+              </tr>
+              <tr>
+                <th scope="row">票券</th>
+                <td>改頭換面票（含大改造）$8000</td>
+              </tr>
+              <tr>
+                <th scope="row">取票序號</th>
+                <td class="text-danger fw-bold">95G54J4434</td>
+              </tr>
+              <tr>
+                <th scope="row">取票號碼</th>
+                <td class="text-danger fw-bold">04597101</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="text-gray-3 font-sans mb-12 mb-md-15">
+            請至 7-Eleven 完成取票，請於 ibon
+            點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br />
+            若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br />
+            若需退票，請按照退票辦法進行申請。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

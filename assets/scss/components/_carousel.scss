@@ -1,0 +1,16 @@
+.banner {
+  height: 90vw;
+  @include media-breakpoint-up(md) {
+    height: 35vw;
+  }
+}
+.carousel-title {
+  position: absolute;
+  top: 1rem;
+  left: 2.5rem;
+  color: white;
+  @include media-breakpoint-up(md) {
+    top: 3rem;
+    left: 3rem;
+  }
+}

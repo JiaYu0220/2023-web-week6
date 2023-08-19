@@ -1,0 +1,38 @@
+.cart-step-group {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 87%;
+    height: 1px;
+    top: 16px;
+    left: 32px;
+    background-color: #000;
+    z-index: -1;
+    @include media-breakpoint-up(md) {
+      top: 24px;
+      left: 48px;
+    }
+  }
+}
+.cart-step {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-weight: 700;
+  color: #000;
+  background-color: $body-bg;
+
+  &.ready {
+    background-color: #000;
+    color: $primary;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.125rem;
+    width: 48px;
+    height: 48px;
+  }
+}

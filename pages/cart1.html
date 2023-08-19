@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購票-帳單確認 | 7TAO</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+    <!--========================
+    =          step            =
+    =========================-->
+    <div class="container-sm">
+      <div class="row justify-content-center mb-6 mb-md-12">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+          <ul
+            class="cart-step-group list-unstyled d-flex justify-content-between mt-2 mt-md-7"
+          >
+            <li class="d-flex flex-column align-items-center">
+              <div class="cart-step ready mb-1 mb-md-2">1</div>
+              <p class="fw-bold">訂單確認</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <div class="cart-step mb-1 mb-md-2">2</div>
+              <p class="fw-bold">結帳付款</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <div class="cart-step mb-1 mb-md-2">3</div>
+              <p class="fw-bold">訂購結果</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--========================
+      =           訂單           =
+      =========================-->
+      <h3 class="fs-5 fs-md-3 text-sm-center mb-6 mb-md-8">
+        返老還童-制服聯誼
+      </h3>
+      <!-- table -->
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+          <table class="table mb-8 mb-md-12">
+            <tbody>
+              <tr>
+                <th scope="row">日期</th>
+                <td>2023/5/12</td>
+              </tr>
+              <tr>
+                <th scope="row">票種</th>
+                <td>改頭換面票（含大改造）</td>
+              </tr>
+              <tr>
+                <th scope="row">票價</th>
+                <td>$8000</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 聯絡人資料 -->
+          <img
+            src="../assets/images/sparkler.png"
+            alt="sparkler"
+            class="d-flex mb-4 mx-auto"
+            width="32px"
+            height="32px"
+          />
+          <h4 class="fs-7 text-center">聯絡人資料</h4>
+          <form class="font-sans needs-validation" novalidate>
+            <div class="mb-4 w-100">
+              <label for="name" class="form-label">聯絡人姓名</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="name"
+                placeholder="請輸入聯絡人名稱"
+                required
+              />
+              <div class="invalid-feedback">請輸入聯絡人姓名</div>
+            </div>
+            <div class="mb-4 w-100">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="email"
+                placeholder="請輸入Email"
+                required
+              />
+              <div class="invalid-feedback">請輸入Email</div>
+            </div>
+            <div class="mb-6 mb-md-8 w-100">
+              <label class="form-label" for="tel">手機</label>
+              <input
+                type="tel"
+                class="form-control form-control-lg"
+                id="tel"
+                placeholder="請輸入手機號碼"
+                required
+              />
+              <div class="invalid-feedback">請輸入手機號碼</div>
+            </div>
+            <div
+              class="d-grid col-12 col-md-8 flex-column mx-auto mb-12 mb-md-15"
+            >
+              <button
+                class="btn btn-dark w-100 fs-md-8 fs-10 fw-bold mb-4"
+                type="submit"
+              >
+                確認表單資料<i
+                  class="icofont-double-right ml-1"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <a class="text-gray-3 fs-9 text-center hover-underline" href="#"
+                >取消購票</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

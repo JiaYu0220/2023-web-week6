@@ -1,0 +1,38 @@
+//font family
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;500;700&family=Yeseva+One&display=swap");
+
+//icon
+@import "../../node_modules/icofont/dist/icofont.min.css";
+
+//bootstrap
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../scss/vendors/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../scss/vendors/utilities";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+@import "../../node_modules/bootstrap";
+
+//component
+@import "../scss/components/buttons";
+@import "../scss/components/nav";
+@import "../scss/components/carousel";
+@import "../scss/components/tag";
+@import "../scss/components/marquee";
+@import "../scss/components/card";
+@import "../scss/components/table";
+@import "../scss/components/form";
+// @import "../scss/mixins/buttons";
+
+//utils
+@import "../scss/utils/font.scss";
+@import "../scss/utils/helper.scss";
+
+//layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+//pages
+@import "./pages/index.scss";
+@import "./pages/cart.scss";

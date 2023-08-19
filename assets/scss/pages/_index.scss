@@ -1,0 +1,14 @@
+.list-style-sparkler {
+  position: relative;
+  text-indent: 28px;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../images/sparkler.png) no-repeat center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+}
